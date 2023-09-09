@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tracking Page</h1>
+    </header>
+    <main>
+        <div class="tracking-form">
+            <label for="trackingNumber">Enter Tracking Number:</label>
+            <input type="text" id="trackingNumber" placeholder="Enter tracking number">
+            <button id="trackButton">Track</button>
+        </div>
+        <div id="trackingResult">
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    header {
+        background-color: #7309b9;
+        color: #df0ac2;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    main {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .tracking-form {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        margin-right: 10px;
+    }
+    
+    input[type="text"] {
+        width: 70%;
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    button {
+        padding: 5px 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    
+    #trackingResult {
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+    body{
+        background-color: black;
+        color: #fff;
+    }
+    </style>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const trackButton = document.getElementById("trackButton");
+        const trackingNumberInput = document.getElementById("trackingNumber");
+        const trackingResult = document.getElementById("trackingResult");
+    
+        trackButton.addEventListener("click", function () {
+            const trackingNumber = trackingNumberInput.value;
+            
+            
+            const trackingInfo = getTrackingInfo(trackingNumber);
+            
+           
+            trackingResult.innerHTML = trackingInfo;
+        });
+    
+        function getTrackingInfo(trackingNumber) {
+           
+            return `Tracking Number: ${trackingNumber}<br>Status: In Transit<br>Expected Delivery: 09/15/2023`;
+        }
+    });
+    const inquiryForm = document.getElementById("inquiryForm");
+
+inquiryForm.addEventListener("submit", function (e) {
+    e.preventDefault(); 
+    
+    
+});
+    </script>
+</body>
+</html>

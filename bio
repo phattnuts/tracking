@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+<head > <meta charset="UTF-8">
+     ImEx Cargo LLC 
+    </head>
+<body>
+    <h1><img src="https://sz8303.p3cdn1.secureserver.net/wp-content/uploads/2021/01/imex5-copy.png" class="img"></h1>
+    <h2> HOMEPAGE </h2>
+    <p class="bio">ImEx Cargo founded in 2000 is a woman owned cargo transportation company with over 30 years in supply chain management and New England's choice for Airline Cargo Sales Agent (CSA/CSSA).   
+
+        Over the past 20 years, we have handled 4 of the Top 20 All Freighter Airlines from our market delivering profitable results to our airline partners and a freighter solution to our local market. We deliver an unparalleled local market presence, access to the community individuals, professionals and stakeholders so you have increased sales and cargo revenue with little to no startup cost to our airline cargo partners.  We are focused on people, community and sales driven results.
+        
+        Some of our cargo partners past and present consist of:  Cathay Pacific, Polar Air Cargo, Atlas Air, AirBridge Cargo, DAS AIR, Air Jamaica, Amerijet, Alaska Cargo, SunCountry and more.
+        
+        ImEx Cargo is a domestic freight broker offering LTL/ FTL and specialized services.
+        
+        We are City/ State and Federally certified -WOSB/ WBE/DBE/ ACDBE
+        
+        We create a tailored customized approach for delivering excellence to our customers and partners.
+        </p>
+
+
+</body>
+<style>
+    .img{
+        width: 200px;
+        height: 200px;
+        align-content: left;
+    }
+    h2{
+        text-align: center ;
+        font-family: 'Times New Roman', Times, serif;
+        color: aliceblue;
+        font-size: xx-large;
+    }
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        color: aliceblue;
+    }
+    body{
+        background-color: black;
+
+    }
+</style>
+</html>

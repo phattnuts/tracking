@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <h1>input any inquies or quotes down below. </h1>
+        <div>
+            <label for="userInput">Enter a message:</label>
+            <input type="text" id="userInput">
+            <button onclick="printMessage()">Submit</button>
+        </div>
+        
+        <div id="output"></div>
+    
+        <script>
+            function printMessage() {
+                var userInput = document.getElementById('userInput').value;
+                if (userInput !== '') {
+                    var outputDiv = document.getElementById('output');
+                    var message = "Thank you for contacting ImEx Cargo LLC, our agents will contact you shortly.";
+                    outputDiv.innerHTML = "<p>previous message: " + userInput + "</p><p>" + message + "</p>";
+                }
+            }
+       
+        </script>
+    </body>
+    <style>
+        body{
+            color: #fff;
+           background-color: black;
+        }
+        input[type="text"] {
+        width: 70%;
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+    button {
+        padding: 5px 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    h1{
+        text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+           font-size: xx-large;
+           color: antiquewhite;
+    }
+    
+    
+    </style>
+
+</html>
